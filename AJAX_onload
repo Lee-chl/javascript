@@ -1,0 +1,12 @@
+	var xhr = new XMHttpRequest();
+	xhr.onload = function(){ //요청에 대한 콜백
+		if(xhr.status === 200 || xhr.status === 201) { //요청이 완료되면
+				console.log(xhr.responseText); //서버에서 보내주는 값 
+			}
+};
+xhr.onerror = funcation() {
+			console.error(xhr.responseText);
+ };
+
+xhr.open('GET','https://www.zerocho.com/api/get'); //메서드와 주소 설정
+xhr.send(); // 요청 전송
