@@ -1,0 +1,19 @@
+<script>
+var xhr = XMLHttpRequest();
+var formData = new FormData();
+formData.append('name','zero');
+formData.append('birth',1998);
+xhr.onreadystatechange = function(){
+       if(xhr.readyState === xhr.DONE) {
+        if(xhr.status === 200 || xhr.status === 201){
+            console.log(xhr.responseText);
+        }else{
+            console.error(xhr.responseText);
+        }
+       }
+};
+
+xhr.open('POST','https://www.zerocho.com/api/post/json');
+xhr.send(formData); //폼 데이터 객체 전송 
+
+</script>
