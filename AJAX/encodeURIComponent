@@ -1,0 +1,16 @@
+<script>
+var xhr = XMLHttpRequest();
+xhr.onreadystatechange = function(){
+       if(xhr.readyState === xhr.DONE) {
+        if(xhr.status === 200 || xhr.status === 201){
+            console.log(xhr.responseText);
+        }else{
+            console.error(xhr.responseText);
+        }
+       }
+};
+//한글 주소 인코딩 
+xhr.open('GET','https://www.zerocho.com/api/search/' + encodeURIComponent('노드'));
+//전송
+xhr.send();
+</script>
