@@ -1,0 +1,23 @@
+//함수 선언
+function greet(name){
+    console.log("hello "+name);
+}
+greet("YJ"); // hello YJ
+
+//함수 표현식
+const greeter = function hi(name){
+    console.log("hello "+name);
+}
+greeter("YJ"); //hello YJ
+
+//익명 함수        함수 hi를 지워서 익명 함수를 만듬 
+const greeter = function (name){
+    console.log("hello "+name);
+}
+greeter("YJ"); //hello YJ
+
+//화살표 함수    function 키워드가 사라지고 매개변수 뒤에 =>가 붙음
+const greeter = (name) => {
+    console.log("hello "+ name );
+};
+greeter("YJ"); // hello YJ
