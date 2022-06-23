@@ -1,0 +1,10 @@
+//string: 문자열
+let userName = "YJ"
+console.log(userName);
+//number : 숫자
+let age = 25;
+//boolean : true,false
+let married = false;
+
+//null : 값이 없음 , undefined : 정의되지 않은 값
+//symbol(심벌) : 고유하고 변경할 수 없는 값 
