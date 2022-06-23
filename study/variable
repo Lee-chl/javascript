@@ -1,0 +1,14 @@
+//재 할당 가능
+var username = "YJ";
+let username = "yj";
+let age = 27;
+
+//상수 (값을 덮어 쓸 수 없다./ 재 할당 불 가능)
+const username = "yj";
+const age = 27;
+
+//변수 이름 예시
+//캐멀 케이스 (camelCase)
+let lastLogIn='';
+//스네이크 케이스 (snake_case)
+let last_log_in='';
