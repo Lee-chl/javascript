@@ -1,0 +1,23 @@
+//배열 순서대로 값을 저장하는 객체
+//각 항목의 값에 접근할 때는 인덱스를 사용한다. (0부터 시작함)
+const fruit = ['apple','banana','orange'];
+console.log(fruit[0]); //apple
+
+//배열의 길이 확인
+console.log(fruit.length);
+
+//배열의 끝에 새 값 추가
+fruit.push('pear');
+console.log(fruit); //["apple","banana","orange","pear"]
+
+//배열의 시작에 새 값 추가
+fruit.unshift('melon');
+console.log(fruit); //["melon","apple","banana","orange","pear"]
+
+//배열의 끝에서 값 하나를 제거
+fruit.pop();
+console.log(fruit);//["melon","apple","banana","orange"]
+
+//배열의 시작에서 값 하나를 제거
+fruit.shift();
+console.log(fruit); //["apple","banana","orange"]
