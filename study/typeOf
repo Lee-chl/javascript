@@ -1,0 +1,15 @@
+//typeof : 자료형 확인 할 수 있음
+const str = "hello";
+typeof(str); //"string"
+
+const num = 12;
+typeof(num);
+//"number"
+
+const arr = [1,2,3];
+typeof(arr); // "object"
+
+const obj = {prop: 'vale'};
+typeof(obj); //"object"
+
+typeof(null); //"object"
