@@ -1,0 +1,47 @@
+//객체는 여러 속성의 모음을 저장하는 데 사용 
+const car = {
+    wheels: 4,
+    color: "red",
+};
+
+//객체의 값은 모든 자료형이 될 수 있다. (함수도 될 수 있다. : 값이 함수면 메서드를 호출하는 것)
+const car2 ={
+    wheels: 4,
+    color: "red",
+    drive: function (){
+        console.log("my car~")
+    },
+};
+
+console.log(Object.keys(car2[0])); //wheels
+console.log(typeof Object.keys(car2)[0]); //string
+car.drive(); // my car~
+
+//빈 객체 생성
+const car3 = new Object();
+const car4={}; //객체 리터럴
+
+//객체에 새 속성 추가하기
+//점 표기법
+car3.color = 'red';
+console.log(car3); // {color:"red"}
+//대괄호 표기법
+car4['color'];
+//여러 단어로 이루어진 속성의 경우 해당 이름을 따옴표로 묶어야 하므로 대괄호 표기법 사용
+car4['goes fast'];
+//변수에 저장된 키를 사용해서 객체의 속성에 접근 할 때 대괄호 표기법 사용
+const key = "color";
+console.log(cars3[key]); //여기서 key는 문자열이 아닌 변수이름이므로 따옴표 표기 해서는 안됨
+
+//객체의 복사
+//객체 복사 시 참조 방식이 쓰인다.
+let car5 = car; //그 자체의 객체가 아니라 car의 참조(주소)를 저장 
+
+//객체의 복사본 만들기
+//Object.assign()
+                        //첫 번째 인수는 복사본에 해당하는 객체, 두번째는 원본에 해당하는 객체 (빈 객체에 car를 넣었다.)
+const car6 = Object.assign({},car);
+car6.wheels = 8;
+console.log(car.wheels); // 4
+console.log(car6.wheels) //8
+
