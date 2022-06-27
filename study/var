@@ -1,3 +1,4 @@
+//var는 함수 스코프에 종속된다.
 for(var i =0;i<10;i++){
     var leak="I am available outside of the loop";
 }
