@@ -6,6 +6,7 @@ if(x==="global"){
     console.log(x); //block-scoped
 }
 
+//블록 스코프여서 블록을 벗어나면 위에 if에서 사용한 변수를 사용할 수 없다.
 console.log(x); // global
 
 // var 경우
@@ -15,4 +16,5 @@ if(y=="global"){
     
     console.log(y); //block-scoped
 }
+//함수 스코프여서 if에서 사용한 변수를 사용할 수 있다. 
 console.log(u); //block-scoped
