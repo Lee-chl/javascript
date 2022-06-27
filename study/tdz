@@ -1,0 +1,7 @@
+//var는 정의 되기 전에 접근 할 수 있지만 그 값에는 접근 할 수 없다 -> undefined 값 갖게 됨
+console.log(i); //undefined
+var i = "I am variable"; 
+
+//let ,const의 경우 정의 되기 전에 접근 할 수 없다. -> error 발생
+console.log(z); //error
+let z = "I am let";
