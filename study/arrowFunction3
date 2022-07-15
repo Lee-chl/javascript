@@ -1,0 +1,3 @@
+//화살표 함수는 익명 함수이다.
+const greeting = name => `hello ${name}`;
+greeting("Tom");
