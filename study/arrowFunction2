@@ -1,0 +1,15 @@
+//명시적 반환 
+const arrowFuntion = function(name) => {
+  return "hello"+name};
+  };
+ 
+ //암시적 반환
+ const arrowFunction = name => `hello ${name}`;
+ 
+ 
+ //객체 리터널 암시적 반환
+ const race ="100"
+ const runner = ["Un',"jst","Asa"];
+ const results = runners.map((runner,i) => ({name: runner,race,place : i+1}));
+ 
+ console.log(results);
