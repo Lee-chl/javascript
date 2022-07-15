@@ -1,0 +1,19 @@
+//일반 함수
+const greeting = function(name){
+  return "hello " + name;
+ };
+ 
+ //화살표 함수
+ var greeting = (name) => {
+  return `hello ${name}`;
+ };
+ 
+ //매개변수가 하나만 있는 함수 
+ var greeting = name => {
+  return `hello ${name}`;
+ };
+ 
+ //매개변수가 없는 함수
+ var greeting = () => {
+  return "hello";
+ };
